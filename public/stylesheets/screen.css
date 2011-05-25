@@ -9,6 +9,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: inherit;
   vertical-align: baseline;
 }
+
+header img {
+	padding: 1em;
+	background: #fff;
+}
+
 *:focus { outline: 0; }
 body {
   line-height: 1em;
@@ -33,7 +39,6 @@ blockquote:before { content: ""; }
 blockquote:after { content: ""; }
 img a { border: none; }
 hr {
-  background: #dddddd;
   color: #dddddd;
   clear: both;
   float: none;
@@ -43,7 +48,6 @@ hr {
   border: none;
 }
 hr.space {
-  background: #dddddd;
   color: #dddddd;
   clear: both;
   float: none;
@@ -51,7 +55,6 @@ hr.space {
   height: 0.1em;
   margin: 0 0 1.45em;
   border: none;
-  background: #ffffff;
   color: #ffffff;
 }
 body {
@@ -260,7 +263,7 @@ legend {
 }
 body {
   margin-top: 10px;
-  background: #ffffff url(../images/body-back.png) top left repeat-x;
+  background: #FFFFFF
 }
 div.left {
   float: left;
@@ -913,4 +916,13 @@ div#checkout #checkout-summary {
   margin-top: 10px;
   padding: 20px;
   width: 180px;
+}
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+body header {
+  background: #0E7DB2
 }

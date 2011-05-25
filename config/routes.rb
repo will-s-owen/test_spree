@@ -1,4 +1,12 @@
 TestSpree::Application.routes.draw do
+
+	match '/home', :to => 'pages#home'
+	
+	resources :products do
+		put :rate, :on => :member
+	end
+ 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rater_id: 1
+  stars: 1
+  product_id: 1
+
+two:
+  rater_id: 1
+  stars: 1
+  product_id: 1

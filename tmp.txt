@@ -1,4 +1,22 @@
 (in c:/Ruby192/apps/test_spree)
+                                   home        /home(.:format)                                                           {:controller=>"pages", :action=>"home"}
+                           rate_product PUT    /products/:id/rate(.:format)                                              {:action=>"rate", :controller=>"products"}
+                               products GET    /products(.:format)                                                       {:action=>"index", :controller=>"products"}
+                                        POST   /products(.:format)                                                       {:action=>"create", :controller=>"products"}
+                            new_product GET    /products/new(.:format)                                                   {:action=>"new", :controller=>"products"}
+                           edit_product GET    /products/:id/edit(.:format)                                              {:action=>"edit", :controller=>"products"}
+                                product GET    /products/:id(.:format)                                                   {:action=>"show", :controller=>"products"}
+                                        PUT    /products/:id(.:format)                                                   {:action=>"update", :controller=>"products"}
+                                        DELETE /products/:id(.:format)                                                   {:action=>"destroy", :controller=>"products"}
+                                               /home(.:format)                                                           {:controller=>"pages", :action=>"home"}
+                                        PUT    /products/:id/rate(.:format)                                              {:action=>"rate", :controller=>"products"}
+                                        GET    /products(.:format)                                                       {:action=>"index", :controller=>"products"}
+                                        POST   /products(.:format)                                                       {:action=>"create", :controller=>"products"}
+                                        GET    /products/new(.:format)                                                   {:action=>"new", :controller=>"products"}
+                                        GET    /products/:id/edit(.:format)                                              {:action=>"edit", :controller=>"products"}
+                                        GET    /products/:id(.:format)                                                   {:action=>"show", :controller=>"products"}
+                                        PUT    /products/:id(.:format)                                                   {:action=>"update", :controller=>"products"}
+                                        DELETE /products/:id(.:format)                                                   {:action=>"destroy", :controller=>"products"}
         admin_promotion_promotion_rules GET    /admin/promotions/:promotion_id/promotion_rules(.:format)                 {:action=>"index", :controller=>"admin/promotion_rules"}
                                         POST   /admin/promotions/:promotion_id/promotion_rules(.:format)                 {:action=>"create", :controller=>"admin/promotion_rules"}
      new_admin_promotion_promotion_rule GET    /admin/promotions/:promotion_id/promotion_rules/new(.:format)             {:action=>"new", :controller=>"admin/promotion_rules"}
@@ -118,11 +136,11 @@
                                         PUT    /account(.:format)                                                        {:action=>"update", :controller=>"users"}
                                         DELETE /account(.:format)                                                        {:action=>"destroy", :controller=>"users"}
                                    root        /(.:format)                                                               {:controller=>"products", :action=>"index"}
-                               products GET    /products(.:format)                                                       {:action=>"index", :controller=>"products"}
+                                        GET    /products(.:format)                                                       {:action=>"index", :controller=>"products"}
                                         POST   /products(.:format)                                                       {:action=>"create", :controller=>"products"}
-                            new_product GET    /products/new(.:format)                                                   {:action=>"new", :controller=>"products"}
-                           edit_product GET    /products/:id/edit(.:format)                                              {:action=>"edit", :controller=>"products"}
-                                product GET    /products/:id(.:format)                                                   {:action=>"show", :controller=>"products"}
+                                        GET    /products/new(.:format)                                                   {:action=>"new", :controller=>"products"}
+                                        GET    /products/:id/edit(.:format)                                              {:action=>"edit", :controller=>"products"}
+                                        GET    /products/:id(.:format)                                                   {:action=>"show", :controller=>"products"}
                                         PUT    /products/:id(.:format)                                                   {:action=>"update", :controller=>"products"}
                                         DELETE /products/:id(.:format)                                                   {:action=>"destroy", :controller=>"products"}
                              locale_set        /locale/set(.:format)                                                     {:controller=>"locale", :action=>"set"}
