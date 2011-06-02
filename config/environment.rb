@@ -2,7 +2,7 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-TestSpree::Application.initialize!
 Spree::Config.set(:logo => 'logo.jpg')
+TestSpree::Application.initialize!
 
 ActionView::Base.send   :include, ViewHelper
