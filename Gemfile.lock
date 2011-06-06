@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/humancopy/spree-heroku.git
+  revision: e2175a891954b6d1864d5ac4a30270a2c5742eb4
+  specs:
+    spree_heroku (1.1.0)
+      spree_core (>= 0.60.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -149,4 +156,5 @@ DEPENDENCIES
   rails (= 3.0.7)
   rake (= 0.8.7)
   spree
+  spree_heroku!
   sqlite3
