@@ -10,6 +10,7 @@ gem 'sqlite3'
 
 gem 'spree'
 gem 'spree_heroku', :git => 'https://github.com/humancopy/spree-heroku.git'
+#gem 'dynamic_variants', :git => 'https://github.com/square-circle-triangle/spree-dynamic-variants.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
