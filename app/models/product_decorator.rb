@@ -5,7 +5,7 @@ Product.class_eval do
 	cattr_accessor :minimum_rating_allowed, :maximum_rating_allowed
 	self.minimum_rating_allowed = 1
 	self.maximum_rating_allowed = 5
-	
+	  
 	def AvgRating
 		ratings.average(:stars).sum.to_f/ratings.size
 	end

@@ -22,5 +22,10 @@ class SpreeDigitalHooks < Spree::ThemeSupport::HookListener
 		<%= stylesheet_link_tag("ratings") %>
 		END
 	end	
+	
+	insert_before :inside_footer do
+		<<-END
 
+		END
+	end
 end

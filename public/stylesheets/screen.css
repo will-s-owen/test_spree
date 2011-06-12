@@ -926,3 +926,22 @@ div#checkout #checkout-summary {
 body header {
   background: #0E7DB2
 }
+
+div#legal {
+  margin-top: 10px;
+  padding: 0;
+  width: 910px;
+}
+div#legal img { 
+  margin-top: 150px;
+  padding: 0;
+  position:relative;
+  left:-250px;
+}
+div#legal #legal_text {
+  background-image: url(../images/legal_frame_950.png);
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  padding: 20px;
+  width: 910px;
+}

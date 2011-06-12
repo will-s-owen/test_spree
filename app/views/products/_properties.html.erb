@@ -1,14 +1,19 @@
 <% unless @product_properties.blank? || @product_properties.size == 1 && (@product_properties[0].property.name == "&extra_variant") %>
 <dl id="product-properties" class="table-display">
 <% for product_property in @product_properties %>
-  <% unless product_property.property.name == "&extra_variant" || product_property.property.name == "&listen_link" %>
+  <% unless product_property.property.name == "&extra_variant" || product_property.property.name == "&listen_link"  || product_property.property.name == "&legal" %>
     <dt><%= product_property.property.presentation %></dt>
     <dd><%= product_property.value %></dd>
   <% end %>
 <% end %>
 <% for product_property in @product_properties %>
   <% if product_property.property.name == "&listen_link" %>
-    <a href="<%= product_property.value %>">LISTEN</a>!
+    <a href="<%= product_property.value %>"><img alt="Listen" title="Listen" src="../images/listen.png"></a>
+  <% end %>
+  <% if product_property.property.name == "&legal" %>
+  	<% content_for :legal_text do %>
+		<%raw @license_text %>
+	<% end %>
   <% end %>
 <% end %>
 </dl>
