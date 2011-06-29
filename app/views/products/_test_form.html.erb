@@ -2,7 +2,7 @@
 	<% @product.options.position.each do |opt| %>
 		<tr>
 			<td><%= "#{opt.option_type.presentation} - " %></td>
-			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :position, :presentation) %></td>
+			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :id, :presentation) %></td>
 		</tr>
 	<% end %>
 </table>

@@ -31,8 +31,11 @@
 </br>
 
 <% if content_for?(:legal_text) %>
+	&nbsp;
 	<div id="legal">
-		<img src="/images/printbutton.gif">
+		<button class='small primary'>
+			<%= image_tag('/images/print.png') + t('print') %>
+		</button>
 		<div id="legal_text">
 			<%= yield :legal_text %>
 		</div>

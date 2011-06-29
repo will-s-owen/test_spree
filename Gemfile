@@ -11,6 +11,10 @@ gem 'sqlite3'
 gem 'spree'
 gem 'spree_heroku', :git => 'https://github.com/humancopy/spree-heroku.git'
 #gem 'dynamic_variants', :git => 'https://github.com/square-circle-triangle/spree-dynamic-variants.git'
+#gem 'enhanced_option_types', :git => 'https://github.com/pietia/spree-enhanced-option-types.git', :branch => 'rails3'
+#gem "spree_enhanced_option_types", "~> 0.50.0"
+#gem 'spree_flexi_variants', :git=>'https://github.com/jsqu99/spree_flexi_variants.git', :branch =>'pre-deface-stable'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

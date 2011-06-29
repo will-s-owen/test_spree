@@ -2,7 +2,9 @@ class SpreeDigitalHooks < Spree::ThemeSupport::HookListener
 
 	insert_after :product_description do
 		<<-END
+		<% if false %><!-- comment -->
 		<h1>Rating: <%= @product.rating %></h1>(/<%= @product.ratings.size %> users)
+		<!-- end comment --><% end %>
 
 		<%= render_rating(@product, :interactive_stars) %>
 
@@ -20,6 +22,7 @@ class SpreeDigitalHooks < Spree::ThemeSupport::HookListener
 		<<-END
 		<%= stylesheet_link_tag("stars") %>
 		<%= stylesheet_link_tag("ratings") %>
+		<%= stylesheet_link_tag 'screen - black', :media => 'screen' %>
 		END
 	end	
 	
