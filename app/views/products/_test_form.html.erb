@@ -1,9 +1,14 @@
 <table>
 	<% @product.options.position.each do |opt| %>
 		<tr>
-			<td><%= "#{opt.option_type.presentation} - " %></td>
-			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :id, :presentation) %></td>
+			<td><div class="popup_button" id="popup_button_<%= "#{opt.option_type.name}" %>" title="<%= "#{opt.option_type.option_values.first.id}" %>"><%= "#{opt.option_type.presentation}" %> - </div></td>
+			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :id, :presentation), :class=>"option-type"  %></td>
+			<td><span class="option <%= "#{opt.option_type.name}" %>">id</span></td>
 		</tr>
+		<% content_for :popup_text do %>
+		test
+		<% end %>
 	<% end %>
+	<div class="popup_test_text">test</dev>
 </table>
 

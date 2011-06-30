@@ -922,6 +922,10 @@ div#checkout #checkout-summary {
 	border-radius: 10px;
 }
 
+.hidden {
+	display:none;
+}
+
 body header {
   background: #0E7DB2
 }
@@ -935,11 +939,9 @@ div#legal {
 div#legal button { 
   margin-top: 150px;
   position:relative;
-  left:-250px;
 }
 
 div#legal button img{ 
-  margin-top: 150px;
   position:relative;
   left:0px;
 }

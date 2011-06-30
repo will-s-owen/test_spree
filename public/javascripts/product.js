@@ -15,6 +15,10 @@ var add_image_handlers = function() {
           }
           );
 };
+
+function price_update(new_price) {
+	$('.price.update').text(new_price);
+};
  
 jQuery(document).ready(function() {
   add_image_handlers();
@@ -45,5 +49,11 @@ jQuery(document).ready(function() {
     jQuery("#main-image img").attr({src: jQuery(link).attr('href')});
     jQuery('ul.thumbnails li').removeClass('selected');
     jQuery(link).parent('li').addClass('selected');
+
+  });
+  jQuery('#product-variants select.option-type').change(function (event) {
+	$('.option.'+this.id).text(this.value);
+	price_update("test");
+	$("#popup_button_"+this.id)[0].title=this.value;
   });
 });

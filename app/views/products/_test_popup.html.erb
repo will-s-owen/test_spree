@@ -1,0 +1,14 @@
+<div id="popupContact" class="round">
+	<a id="popupContactClose">x</a>
+	<h2 id="popupTitle">Title of our cool popup, yay!</h2>
+	<p id="contactArea">
+		<%= yield :popup_text %>
+	</p>
+</div>
+<div id="backgroundPopup"></div>
+
+<% content_for :head do %>
+  <%= javascript_include_tag 'popup' %>
+  <%= stylesheet_link_tag 'popup' %>
+<% end %>
+
