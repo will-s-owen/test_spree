@@ -1,9 +1,5 @@
 <% @product.variants.each do |v| %>
-	<%= "#{@product.id}-#{v.id}" %><br/>
-	<% v.option_values.each do |ov| %>
-		<%= "#{ov.id}" %>
-	<% end %>
-<div id="<%= build_variant_price_id(v) %>" class="">
+<div id="<%= build_variant_price_id(v) %>" class="hidden">
 	<%= "#{v.price}" %>
 </div>
 <% end %>
