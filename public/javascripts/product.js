@@ -54,6 +54,19 @@ jQuery(document).ready(function() {
   jQuery('#product-variants select.option-type').change(function (event) {
 	$('.option.'+this.id).text(this.value);
 	price_update("test");
-	$("#popup_button_"+this.id)[0].title=this.value;
+	//$("#popup_button_"+this.id).closest('span').attr('title',this.value);
+	$("#popup_button_"+this.id).closest('span.popupvalue').attr('title',this.value);
+	//$("#popup_test_text2").text('1');
+	var title=$("#popup_button_"+this.id).closest('span.popupvalue').attr('title');
+	//var title=this.value;
+	//$("#popup_test_text2").text('2');
+	//$("#popup_test_text2").text(title);
+	var price_id="";
+	$('span.popupvalue').each(function(){
+		price_id=price_id+this.title;
+	});
+	var test1=$('#'+price_id).text()
+	//$("#popup_test_text2").text(test1);
+	price_update('$'+parseFloat(test1).toFixed(2));
   });
 });

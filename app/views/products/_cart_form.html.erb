@@ -16,6 +16,7 @@
       <h2><%= t('variants') %></h2>
 	  <%= render 'test_form' %>
 	  <%= render 'test_popup' %>
+	  <%= render 'test_variant_prices' %>
     </div>
   <% end%>
   <% if @product.has_stock? || Spree::Config[:allow_backorders] %>

@@ -59,10 +59,24 @@ $(document).ready(function(){
 	
 	//LOADING POPUP
 	//Click the button event!
-	$(".popup_button").click(function(){
-		$(".popup_test_text").text(this.title)
-		//this.attr('title','test')
-		$("#popupTitle").text(this.id)
+	$(".popup_button").click(function(e){
+		$("#popup_test_text").text(this.title);
+		var opt_value=$(e.target).closest('span.popupvalue').attr('title');
+		var opt_type=$(this).attr('alt');
+		$("#popup_test_text2").text(opt_value);
+		
+		//set title to name of option type
+		$("#popupTitle").text(opt_type);
+		
+		//set all text hidden but the selected option value opt_value
+		$(".option_value").each(function(){
+			if( (!$(this).hasClass("hidden")))
+				$(this).toggleClass("hidden");
+			if(this.id==opt_value){
+				$(this).toggleClass("hidden");
+			}
+		});
+		
 		//centering with css
 		centerPopup();
 		//load popup

@@ -1,14 +1,20 @@
 <table>
 	<% @product.options.position.each do |opt| %>
 		<tr>
-			<td><div class="popup_button" id="popup_button_<%= "#{opt.option_type.name}" %>" title="<%= "#{opt.option_type.option_values.first.id}" %>"><%= "#{opt.option_type.presentation}" %> - </div></td>
-			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :id, :presentation), :class=>"option-type"  %></td>
-			<td><span class="option <%= "#{opt.option_type.name}" %>">id</span></td>
+			<td><span class="popupvalue" title="<%= "#{opt.option_type.option_values.first.id}" %>"><div class="popup_button" id="popup_button_<%= "#{opt.option_type.name}"  %>" alt="<%= "#{opt.option_type.presentation}" %>" title="Click for definition of <%= "#{opt.option_type.presentation}" %>"><%= "#{opt.option_type.presentation}" %> - </div></span></td>
+			<td><%= select_tag "#{opt.option_type.name}",  options_from_collection_for_select(opt.option_type.option_values, :id, :presentation ), {:class=>"option-type",:selected=>opt.option_type.option_values.first.id} %></td>
+			<% if false %><td><span class="option <%= "#{opt.option_type.name}" %>">id</span></td><% end %>
 		</tr>
 		<% content_for :popup_text do %>
-		test
+			<% opt.option_type.option_values.each do |value| %>
+				<div id="<%= value.id %>" class="option_value" >
+					<%= render("option_value_#{value.id}.html", :content_type => 'text/html', :layout => false) %>
+				</div>
+			<% end %>
 		<% end %>
 	<% end %>
-	<div class="popup_test_text">test</dev>
+	<% if false %><div id="popup_test_text">test</div><% end %>
+	<div id="popup_test_text2">test</div>
 </table>
+<div class="small">Click option header for defintions of terms</div>
 
