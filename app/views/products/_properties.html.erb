@@ -8,7 +8,10 @@
 <% end %>
 <% for product_property in @product_properties %>
   <% if product_property.property.name == "&listen_link" %>
-    <a href="<%= product_property.value %>"><img alt="Listen" title="Listen" src="../images/listen.png"></a>
+    <% if false %><a href="<%= product_property.value %>"><img alt="Listen" title="Listen" src="../images/listen2.png"></a><% end %>
+	<button class='small primary'>
+		<%= image_tag('/images/speaker.png') + t('listen') %>
+	</button>
   <% end %>
   <% if product_property.property.name == "&legal" %>
   	<% content_for :legal_text do %>

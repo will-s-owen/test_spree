@@ -68,7 +68,7 @@ body {
 }
 h1 {
   font-weight: normal;
-  color: #777;
+  color: #ccc;
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.5em;
@@ -76,34 +76,34 @@ h1 {
 h1 img { margin: 0; }
 h2 {
   font-weight: normal;
-  color: #666;
+  color: #bbb;
   font-size: 2em;
   margin-bottom: 0.75em;
 }
 h3 {
   font-weight: normal;
-  color: #666;
+  color: #bbb;
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
 }
 h4 {
   font-weight: normal;
-  color: #666;
+  color: #bbb;
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
 }
 h5 {
   font-weight: normal;
-  color: #666;
+  color: #bbb;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
 h6 {
   font-weight: normal;
-  color: #666;
+  color: #bbb;
   font-size: 1em;
   font-weight: bold;
 }
@@ -556,9 +556,21 @@ button.primary, a.button.primary, input.button.primary {
   font-weight: bold;
   color: #000000;
 }
-button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }
-a.button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }
-input.button:hover { background-image: url(../images/buttons/bg-button-hover.png) !important; }
+button:hover { 
+border-color: #fff #fff #fff #fff !important;
+color: #333;
+background-image: url(../images/buttons/bg-button-hover.png) !important; 
+}
+a.button:hover {
+border-color: #fff #fff #fff #fff !important;
+color: #333;
+background-image: url(../images/buttons/bg-button-hover.png) !important; 
+}
+input.button:hover { 
+color: #333;
+border-color: #fff #fff #fff #fff !important;
+background-image: url(../images/buttons/bg-button-hover.png) !important; 
+}
 button.large, a.button.large, input.button.large {
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
@@ -951,7 +963,7 @@ div#legal button img{
 }
 
 div#legal #legal_text {
-  background-image: url(../images/legal_frame_black_950.png);
+  background-image: url(../images/legal_frame_black_950_2.png);
   background-repeat: no-repeat;
   margin-top: 0px;
   padding: 20px;
