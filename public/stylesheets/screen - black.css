@@ -528,12 +528,14 @@ button, a.button, input.button {
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  background: #efefef url(../images/buttons/bg-button.png) center left repeat-x !important;
+  #background: #efefef url(../images/buttons/bg-button.png) center left repeat-x !important;
+  background: #efefef url(../images/test_button.png) center left repeat-x !important;
   border-style: solid;
   border-width: 1px !important;
   border-color: #dddddd #999999 #999999 #dddddd !important;
   -moz-outline-radius: 0.3em;
-  color: #111111;
+  #color: #111111;
+  color: #ddd
   display: inline-block;
   font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 1.1em !important;
@@ -554,22 +556,29 @@ button, a.button, input.button {
 }
 button.primary, a.button.primary, input.button.primary {
   font-weight: bold;
-  color: #000000;
+  #color: #000000;
+  color: #ddd;
 }
 button:hover { 
 border-color: #fff #fff #fff #fff !important;
-color: #333;
-background-image: url(../images/buttons/bg-button-hover.png) !important; 
+#color: #333;
+color: #bbb;
+#background-image: url(../images/buttons/bg-button-hover.png) !important; 
+background-image: url(../images/test_button_hover.png) !important; 
 }
 a.button:hover {
 border-color: #fff #fff #fff #fff !important;
-color: #333;
-background-image: url(../images/buttons/bg-button-hover.png) !important; 
+#color: #333;
+color: #bbb;
+#background-image: url(../images/buttons/bg-button-hover.png) !important; 
+background-image: url(../images/test_button_hover.png) !important; 
 }
 input.button:hover { 
-color: #333;
+#color: #333;
+color: #bbb;
 border-color: #fff #fff #fff #fff !important;
-background-image: url(../images/buttons/bg-button-hover.png) !important; 
+#background-image: url(../images/buttons/bg-button-hover.png) !important; 
+background-image: url(../images/test_button_hover.png) !important; 
 }
 button.large, a.button.large, input.button.large {
   -moz-border-radius: 0.3em;
