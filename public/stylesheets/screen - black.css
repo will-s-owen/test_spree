@@ -535,7 +535,7 @@ button, a.button, input.button {
   border-color: #dddddd #999999 #999999 #dddddd !important;
   -moz-outline-radius: 0.3em;
   #color: #111111;
-  color: #ddd
+  color: #ddd;
   display: inline-block;
   font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 1.1em !important;
